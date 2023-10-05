@@ -1,5 +1,5 @@
 <template>
-            <footer class="bg-dark text-light text-md-left ">
+            <footer class="bg-dark text-light text-md-left " id="footer">
             <div class="container">
                 <div class="row pt-4">
                     <div class="col-sm-6 col-md-3 ">

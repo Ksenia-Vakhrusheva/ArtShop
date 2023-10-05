@@ -5,12 +5,12 @@ import 'firebase/compat/firestore';
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBGe3aQimScgMFUc91idMEyYt5t5kMU1Yc",
-  authDomain: "artproject-66d05.firebaseapp.com",
-  projectId: "artproject-66d05",
-  storageBucket: "artproject-66d05.appspot.com",
-  messagingSenderId: "598824987390",
-  appId: "1:598824987390:web:712116067e20b1dbbb93af"
+  apiKey: "AIzaSyAjkvgjfgIzlSTzNrjV1k_85ylSDP3W6F0",
+  authDomain: "artshop-fdf76.firebaseapp.com",
+  projectId: "artshop-fdf76",
+  storageBucket: "artshop-fdf76.appspot.com",
+  messagingSenderId: "371904362799",
+  appId: "1:371904362799:web:4d92391221bb2d88f909da"
 };
 const firebaseApp = firebase.initializeApp(firebaseConfig);
  firebaseApp.firestore();
