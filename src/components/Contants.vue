@@ -4,10 +4,10 @@
       <div class="row">
         <!-- Left Column -->
         <div class="col-md-7 col-12 mt-5">
-          <h1 class="text-white">Title</h1>
+          <!-- <h1 class="text-white">Title</h1>
           <p class="text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur ante at ex eleifend, id efficitur sapien facilisis. Vestibulum ut arcu a libero consequat dignissim. Fusce in arcu nec metus aliquam feugiat.
-          </p>
+          </p> -->
         </div>
 
         <!-- Right Column -->
@@ -35,6 +35,7 @@ export default {
   filter: brightness(80%);
   /* background-color: #3B5D50; */
   opacity: 90%;
+  height: 600px;
 
  
   

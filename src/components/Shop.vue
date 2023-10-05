@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-12">
           <!-- Navbar -->
-          <h1 class="m-4">Shop</h1>
+          <h1 class="m-4">Товары</h1>
           <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
             <div class="container-fluid">
               <!-- <a class="navbar-brand" href="#shop">Shop</a> -->
@@ -28,7 +28,7 @@
                       @click.prevent="setCategory('all')"
                       :class="{ active: activeCategory === 'all' }"
                     >
-                      All Products
+                    Все товары
                     </a>
                   </li>
                   <li class="nav-item">
@@ -38,7 +38,7 @@
                       @click.prevent="setCategory('paintings')"
                       :class="{ active: activeCategory === 'paintings' }"
                     >
-                      Paintings
+                      Картины
                     </a>
                   </li>
                   <li class="nav-item">
@@ -48,7 +48,7 @@
                       @click.prevent="setCategory('furniture')"
                       :class="{ active: activeCategory === 'furniture' }"
                     >
-                      Furniture
+                      Мебель
                     </a>
                   </li>
                 </ul>
@@ -71,7 +71,7 @@
           <p class="card-text">{{ card.productDescription }}</p>
         </div>
         <div class="card-footer">
-          <p class="card-price">₽{{ card.price }}</p>
+          <p class="card-price text-center ">₽{{ card.price }}</p>
           <!-- <router-link :to="`/card-description/${card.id}`" target="_blank" class="btn btn-dark m-1">Read more</router-link>
           <button @click.prevent="addCart(card.id)" class="btn btn-dark m-1">Add to Cart</button> -->
         </div>

@@ -1,42 +1,37 @@
 <template>
             <footer class="bg-dark text-light text-md-left " id="footer">
-            <div class="container">
+            <div class="container-fluid m-1">
                 <div class="row pt-4">
                     <div class="col-sm-6 col-md-3 ">
                         <h4 class="mb-4 text-left">
-                            Services
+                            Наши Услуги
                         </h4>
                         <p class="text-left">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, veritatis? Adipisci nisi recusandae, dicta sit eos quam. Quos dolores nemo quo eveniet, quod
+                             Искусство и мастерство для вашего дома. Откройте мир красоты с нашими картинами и уникальной мебелью. Подарите вашему пространству уникальный характер.
                         </p>
                     </div>
                     
                     <div class="col-md-6 text-center">
                         <h4 class="mb-4">
-                            Hand Craft Shop
+                            Gussi Shop
                         </h4>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, incidunt at? Est veniam ea deleniti ad recusandae
+                            Нашу продукцию можно приобрести в пределах города Санкт-Петербург, для вашего удобства предусмотрена услуга доставки.
                         </p>
                     </div>
-                    <div class="col-sm-6 col-md-3">
+                    <div class="col-sm-6 col-md-3 text-center">
                         <h4 class="mb-4">
-                            About
+                            Связаться с нами!
                         </h4>
-                        <ul class="list-inline d-flex justify-content-between align-items-end">
-                            <li>
-                                <a href="#shop" class="text-light list-inline-item">Shop</a>
-                            </li>
-                            <li>
-                                <a href="#contact" class="text-light list-inline-item">Contact</a>
-                            </li>
-                            <li>
-                                <a href="#cart" class="text-light list-inline-item">Cart</a>
-                            </li>
-                            <li class="list-inline-item ">
-                            <router-link class="nav-link" :to="{ name: 'Login' }"><u>LogIn/Register</u></router-link>
-                            </li>
-                            
+                        <ul class="list-inline d-flex justify-content-between align-items-end ">
+                            <div class="text-light list-inline-item">
+                                <h5>Номер телефона:</h5>
+                                <p>+79012345678</p>
+                            </div>
+                            <div class="text-light list-inline-item">
+                                <h5>Электронная почта:</h5>
+                                <p>shmidta_spb@gussi.group</p>
+                            </div>
                         </ul>
                     </div>
                 </div>
