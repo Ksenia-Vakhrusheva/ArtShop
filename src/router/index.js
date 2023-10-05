@@ -20,7 +20,7 @@ const router = createRouter({
       }
     },
     {
-      path: "https://main--curious-gaufre-c2d3df.netlify.app/addproduct",
+      path: "/addproduct",
       name: "addProduct",
       component: addProduct,
       meta: {
@@ -38,7 +38,7 @@ const router = createRouter({
       // }
     },
     {
-      path: "https://main--curious-gaufre-c2d3df.netlify.app/delete",
+      path: "/delete",
       name: "deleteProduct",
       component: deleteProduct,
       meta: {

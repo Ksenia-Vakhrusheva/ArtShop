@@ -1,18 +1,18 @@
 <template>
-    <section>
+    <section style="margin-top: 5%;">
       <div class="container-fluid mt-5 mb-5 p-3">
-        <h2>Product List</h2>
+        <h2>Список продуктов</h2>
         <hr>
   
         <!-- Display the list of products -->
-        <ul>
+        <ol>
           <li v-for="(product) in products" :key="product.id">
             <div>
               <strong>{{ product.productName }}</strong> - {{ product.productDescription }} - ${{ product.price }}
             </div>
-            <button @click="deleteProduct(product.id)">Delete</button>
+            <button class="btn btn-danger" @click="deleteProduct(product.id)">Удалить!</button>
           </li>
-        </ul>
+        </ol>
       </div>
     </section>
   </template>

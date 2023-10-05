@@ -24,10 +24,6 @@
                     <div class="d-grid">
                       <button type="submit" class="btn btn-primary btn-lg btn-block gradient-custom-4">Login</button>
                     </div>
-  
-                    <p class="text-center mt-4">Don't have an account?
-                      <router-link class="fw-bold text-body" :to="{ name: 'Register' }">Register Here</router-link>
-                    </p>
                   </form>
                 </div>
               </div>

@@ -15,6 +15,19 @@
             <li class="nav-item">
               <a class="nav-link " aria-current="page" href="#footer">О нас</a>
             </li>
+            <li class="nav-item" >
+              <router-link class="nav-link " v-if="userStore.isLoggedIn == false" :to="{ name: 'Login' }">LogIn/Register</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link " v-if ="userStore.email == 'magicaksu.f3@gmail.com'" :to="{ name: 'addProduct' }">AddProduct</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link " v-if ="userStore.email == 'magicaksu.f3@gmail.com'" :to="{ name: 'deleteProduct' }">RemoveProduct</router-link>
+            </li>
+
+            <li class="nav-item text-white" v-show="userStore.isLoggedIn">
+              <a class="nav-link" @click.prevent="logOut">Log out</a>
+            </li>
               
           </ul>
         </div>
@@ -26,24 +39,20 @@
 <script>
 
 // import { useCartStore } from '../store/cart.js';
-// import { useUserStore } from '../store/user.js';
-// import firebase from "firebase/compat/app";
-// import "firebase/compat/auth"
+import { useUserStore } from '../stores/user.js';
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth"
 export default{
-    // setup(){
-    //   const cartStore = useCartStore()
-    //   const userStore = useUserStore();
-    //   const logOut = ()=> firebase.auth().signOut();
-      
-    
-    //    return{
-    //     cartStore,
-    //     userStore,
-    //     logOut
+    setup(){
+      const userStore = useUserStore();
+      const logOut = ()=> firebase.auth().signOut();
+       return{
+        userStore,
+        logOut
         
         
-    //    }
-    // },
+       }
+    },
     
 }
     
