@@ -19,10 +19,10 @@
               <router-link class="nav-link " v-if="userStore.isLoggedIn == false" :to="{ name: 'Login' }">LogIn/Register</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link " v-if ="userStore.email == 'magicaksu.f3@gmail.com'" :to="{ name: 'addProduct' }">AddProduct</router-link>
+              <router-link class="nav-link " v-if ="userStore.email == 'shmidta_spb@gussi.group'" :to="{ name: 'addProduct' }">AddProduct</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link " v-if ="userStore.email == 'magicaksu.f3@gmail.com'" :to="{ name: 'deleteProduct' }">RemoveProduct</router-link>
+              <router-link class="nav-link " v-if ="userStore.email == 'shmidta_spb@gussi.group'" :to="{ name: 'deleteProduct' }">RemoveProduct</router-link>
             </li>
 
             <li class="nav-item text-white" v-show="userStore.isLoggedIn">
